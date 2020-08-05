@@ -29,7 +29,13 @@ export default {
 <style>
 
 .bottombars {
+
+  bottom: 0;
   display: none;
+  background-color: white
+  ;
+    position: -webkit-sticky;
+  position: sticky;
 }
 @media only screen and (max-width: 760px) {
 .bottombars {
