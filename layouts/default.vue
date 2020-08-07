@@ -62,17 +62,17 @@
         </button>
       </form>
 
-      <div class="m-auto text-center border rounded p-1 category">
+      <nuxt-link to="/cart" class="m-auto category2 text-center border border-light rounded p-1 category">
         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         <span class="badge badge-danger ml-1">0</span>
         <div>Sepetim</div>
-      </div>
+      </nuxt-link>
 
       <div class="my-auto categories2">
         <!-- Button trigger modal -->
-        <div class="category border-0" data-toggle="modal" data-target="#login">Giriş Yap</div>
+        <div class="category catsignn border-0" data-toggle="modal" data-target="#login">Giriş Yap</div>
 
-        <div class="category border-0" data-toggle="modal" data-target="#signup">Kayıt Ol</div>
+        <div class="category catsignn  border-0" data-toggle="modal" data-target="#signup">Kayıt Ol</div>
       </div>
       <!-- Modal -->
       <div
@@ -319,13 +319,16 @@ export default {
 }
 </script>
 
-<style>
+<style > 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 * {
   font-family: 'Noto Sans JP', sans-serif;
 }
+
+button {box-shadow:none !important;}
+select {box-shadow:none !important;}
 
 .giris {
   justify-content: center;
@@ -379,25 +382,24 @@ export default {
   border-radius: 10px 0px 0px 10px;
   -moz-border-radius: 10px 0px 0px 10px;
   -webkit-border-radius: 10px 0px 0px 10px;
-  border: 1px solid #000000;
+  border: 2px solid #bebebe;
   border-right: 0px;
   padding: 6px;
   outline: none;
   width: 500px;
+  margin-left:30px ;
 }
 
 .searchbar:focus {
-  border: 2px solid rgb(255, 68, 68);
-  border-right: 0px !important;
+  border: 2px solid rgb(255, 87, 87);
+
 }
 
 .searchbutton {
   border-radius: 0px 10px 10px 0px;
   -moz-border-radius: 0px 10px 10px 0px;
   -webkit-border-radius: 0px 10px 10px 0px;
-  border-right: 1px solid #000000 !important;
-  border-bottom: 1px solid #000000 !important;
-  border-top: 1px solid #000000 !important;
+ border: 2px solid #bebebe;
   border-left: 0px !important;
   color: gray;
   background-color: white;
@@ -406,7 +408,7 @@ export default {
 }
 
 .searchbutton:focus {
-  border: 2px solid rgb(255, 68, 68) !important;
+  border: 2px solid rgb(255, 87, 87) !important;
 }
 
 .searchbutton:hover {
@@ -427,7 +429,7 @@ export default {
   border-radius: 10px 0px 0px 10px;
   -moz-border-radius: 10px 0px 0px 10px;
   -webkit-border-radius: 10px 0px 0px 10px;
-  border: 1px solid #000000;
+   border: 2px solid #bebebe;
   border-right: 0px;
   padding: 6px;
   outline: none;
@@ -435,16 +437,14 @@ export default {
 }
 
 .searchbar2:focus {
-  border: 2px solid rgb(255, 68, 68);
+  border: 2px solid rgb(255, 87, 87);
 }
 
 .searchbutton2 {
   border-radius: 0px 10px 10px 0px;
   -moz-border-radius: 0px 10px 10px 0px;
   -webkit-border-radius: 0px 10px 10px 0px;
-  border-right: 1px solid #000000 !important;
-  border-bottom: 1px solid #000000 !important;
-  border-top: 1px solid #000000 !important;
+ border: 2px solid #bebebe;
   border-left: 0px !important;
   color: gray;
   background-color: white;
@@ -453,7 +453,7 @@ export default {
 }
 
 .searchbutton2:focus {
-  border: 2px solid rgb(255, 68, 68) !important;
+  border: 2px solid rgb(255, 87, 87) !important;
 }
 
 .searchbutton2:hover {
@@ -476,6 +476,11 @@ export default {
   display: inline;
   cursor: pointer;
 }
+
+.catsignn {
+  padding: 10px;
+}
+
 
 .category:hover {
   border-bottom: 1px solid rgb(255, 68, 68);
