@@ -13,13 +13,12 @@
           <span class="productname mx-auto">Kadın Kazağı</span>
           <hr />
         </div>
- <div class="productimage2 mx-auto">
-        <zoom-on-hover
-          class="pimage2"
-          img-normal="https://www.bestjquery.com/tutorial/product-grid/demo5/images/img-1.jpg"
-        ></zoom-on-hover>
-      </div>
-
+        <div class="productimage2 mx-auto">
+          <zoom-on-hover
+            class="pimage2"
+            img-normal="https://www.bestjquery.com/tutorial/product-grid/demo5/images/img-1.jpg"
+          ></zoom-on-hover>
+        </div>
 
         <div class="infoflex mx-auto card-deck">
           <div class="productinfo mx-auto">
@@ -28,34 +27,37 @@
               <nuxt-link class="productbrand pr m-auto" to="#">Gucci</nuxt-link>
             </div>
             <div class="productselects">
-           <div class=" idblock  m-2 ">
-     <label for="color" class="quantity">Beden Seçin</label>
-     <div>
-              <select id="color" class="custom-select   productsize">
-                <option disabled selected>Beden Seçin</option>
-                <option value="XS">XS</option>
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                 <option value="XL">XL</option>
-              </select> </div>
-  </div>
-  <div class=" idblock m-2  ">
-     <label for="color" class="quantity">Renk Seçin</label>
-     <div>
-              <select id="color" class="custom-select   productsize">
-                <option disabled selected>Renk Seçin</option>
-                <option value="black">Siyah</option>
-                <option value="red">Kırmızı</option>
-                <option value="yellow">Sarı</option>
-                <option value="white">Beyaz</option>
-              </select> </div>
-  </div>
+              <div class="idblock m-2">
+                <label for="color" class="quantity">Beden Seçin</label>
+                <div>
+                  <select id="color" class="custom-select productsize">
+                    <option disabled selected>Beden Seçin</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                  </select>
+                </div>
+              </div>
+              <div class="idblock m-2">
+                <label for="color" class="quantity">Renk Seçin</label>
+                <div>
+                  <select id="color" class="custom-select productsize">
+                    <option disabled selected>Renk Seçin</option>
+                    <option value="black">Siyah</option>
+                    <option value="red">Kırmızı</option>
+                    <option value="yellow">Sarı</option>
+                    <option value="white">Beyaz</option>
+                  </select>
+                </div>
+              </div>
             </div>
-            <div class=" idblock  ">
+            <div class="idblock">
               <div>
-              <label for="number-input" class="quantity">Adet</label>
-              </div>   <number-input id="number-input" v-model="value" :min="1" inline center controls></number-input>
+                <label for="number-input" class="quantity">Adet</label>
+              </div>
+              <number-input id="number-input" v-model="value" :min="1" inline center controls></number-input>
             </div>
             <div class="productbuy">
               <button class="btn btn-danger text-light productbuys">
@@ -99,284 +101,272 @@
       </div>
     </div>
 
- 
-      <div class="rectitle text-center">Benzer Ürünler</div>
+    <div class="rectitle text-center">Benzer Ürünler</div>
 
-      <div class="recdeck card-deck">
-        <nuxt-link to="#" class="mx-auto recproduct">
-          <div class="rpimage-box mx-auto">
-            <img
-              src="https://sky-static.mavi.com/sys-master/maviTrImages/h29/h9f/9282399371294/167245-25705_image_1.jpg_Default-ZoomProductImage"
-            />
-          </div>
+    <div class="recdeck card-deck">
+      <nuxt-link to="#" class="mx-auto recproduct">
+        <div class="rpimage-box mx-auto">
+          <img
+            src="https://sky-static.mavi.com/sys-master/maviTrImages/h29/h9f/9282399371294/167245-25705_image_1.jpg_Default-ZoomProductImage"
+          />
+        </div>
 
-          <div class="mx-auto rptitle" to="#">Kadın T-Shirt</div>
-          <h4 class="productprice2 mt-1 mx-auto">50 TL</h4>
-          <div class="productbuy">
-            <button class="btn btn-danger pbs btn-sm">
-              <i class="fas fa-shopping-cart"></i> Sepete Ekle
-            </button>
-            <button class="btn btn-outline-danger pbs btn-sm text-1">
-              <i class="fas fa-external-link-square-alt"></i> Ürünü İncele
-            </button>
-          </div>
-        </nuxt-link>
+        <div class="mx-auto rptitle" to="#">Kadın T-Shirt</div>
+        <h4 class="productprice2 mt-1 mx-auto">50 TL</h4>
+        <div class="productbuy">
+          <button class="btn btn-danger pbs btn-sm">
+            <i class="fas fa-shopping-cart"></i> Sepete Ekle
+          </button>
+          <button class="btn btn-outline-danger pbs btn-sm text-1">
+            <i class="fas fa-external-link-square-alt"></i> Ürünü İncele
+          </button>
+        </div>
+      </nuxt-link>
 
-        <nuxt-link to="#" class="mx-auto recproduct">
-          <div class="rpimage-box mx-auto">
-            <img
-              src="https://sky-static.mavi.com/sys-master/maviTrImages/h29/h9f/9282399371294/167245-25705_image_1.jpg_Default-ZoomProductImage"
-            />
-          </div>
+      <nuxt-link to="#" class="mx-auto recproduct">
+        <div class="rpimage-box mx-auto">
+          <img
+            src="https://sky-static.mavi.com/sys-master/maviTrImages/h29/h9f/9282399371294/167245-25705_image_1.jpg_Default-ZoomProductImage"
+          />
+        </div>
 
-          <div class="mx-auto rptitle" to="#">Kadın T-Shirt</div>
-          <h4 class="productprice2 mt-1 mx-auto">50 TL</h4>
-          <div class="productbuy">
-            <button class="btn btn-danger pbs btn-sm">
-              <i class="fas fa-shopping-cart"></i> Sepete Ekle
-            </button>
-            <button class="btn btn-outline-danger pbs btn-sm">
-              <i class="fas fa-external-link-square-alt"></i> Ürünü İncele
-            </button>
-          </div>
-        </nuxt-link>
+        <div class="mx-auto rptitle" to="#">Kadın T-Shirt</div>
+        <h4 class="productprice2 mt-1 mx-auto">50 TL</h4>
+        <div class="productbuy">
+          <button class="btn btn-danger pbs btn-sm">
+            <i class="fas fa-shopping-cart"></i> Sepete Ekle
+          </button>
+          <button class="btn btn-outline-danger pbs btn-sm">
+            <i class="fas fa-external-link-square-alt"></i> Ürünü İncele
+          </button>
+        </div>
+      </nuxt-link>
 
-        <nuxt-link to="#" class="mx-auto recproduct">
-          <div class="rpimage-box mx-auto">
-            <img
-              src="https://sky-static.mavi.com/sys-master/maviTrImages/h29/h9f/9282399371294/167245-25705_image_1.jpg_Default-ZoomProductImage"
-            />
-          </div>
+      <nuxt-link to="#" class="mx-auto recproduct">
+        <div class="rpimage-box mx-auto">
+          <img
+            src="https://sky-static.mavi.com/sys-master/maviTrImages/h29/h9f/9282399371294/167245-25705_image_1.jpg_Default-ZoomProductImage"
+          />
+        </div>
 
-          <div class="mx-auto rptitle" to="#">Kadın T-Shirt</div>
-          <h4 class="productprice2 mt-1 mx-auto">50 TL</h4>
-          <div class="productbuy">
-            <button class="btn btn-danger pbs btn-sm">
-              <i class="fas fa-shopping-cart"></i> Sepete Ekle
-            </button>
-            <button class="btn btn-outline-danger pbs btn-sm text-1">
-              <i class="fas fa-external-link-square-alt"></i> Ürünü İncele
-            </button>
-          </div>
-        </nuxt-link>
+        <div class="mx-auto rptitle" to="#">Kadın T-Shirt</div>
+        <h4 class="productprice2 mt-1 mx-auto">50 TL</h4>
+        <div class="productbuy">
+          <button class="btn btn-danger pbs btn-sm">
+            <i class="fas fa-shopping-cart"></i> Sepete Ekle
+          </button>
+          <button class="btn btn-outline-danger pbs btn-sm text-1">
+            <i class="fas fa-external-link-square-alt"></i> Ürünü İncele
+          </button>
+        </div>
+      </nuxt-link>
 
-        <nuxt-link to="#" class="mx-auto recproduct">
-          <div class="rpimage-box mx-auto">
-            <img
-              src="https://sky-static.mavi.com/sys-master/maviTrImages/h29/h9f/9282399371294/167245-25705_image_1.jpg_Default-ZoomProductImage"
-            />
-          </div>
+      <nuxt-link to="#" class="mx-auto recproduct">
+        <div class="rpimage-box mx-auto">
+          <img
+            src="https://sky-static.mavi.com/sys-master/maviTrImages/h29/h9f/9282399371294/167245-25705_image_1.jpg_Default-ZoomProductImage"
+          />
+        </div>
 
-          <div class="mx-auto rptitle" to="#">Kadın T-Shirt</div>
-          <h4 class="productprice2 mt-1 mx-auto">50 TL</h4>
-          <div class="productbuy">
-            <button class="btn btn-danger pbs btn-sm">
-              <i class="fas fa-shopping-cart"></i> Sepete Ekle
-            </button>
-            <button class="btn btn-outline-danger pbs btn-sm text-1">
-              <i class="fas fa-external-link-square-alt"></i> Ürünü İncele
-            </button>
-          </div>
-        </nuxt-link>
-      </div>
+        <div class="mx-auto rptitle" to="#">Kadın T-Shirt</div>
+        <h4 class="productprice2 mt-1 mx-auto">50 TL</h4>
+        <div class="productbuy">
+          <button class="btn btn-danger pbs btn-sm">
+            <i class="fas fa-shopping-cart"></i> Sepete Ekle
+          </button>
+          <button class="btn btn-outline-danger pbs btn-sm text-1">
+            <i class="fas fa-external-link-square-alt"></i> Ürünü İncele
+          </button>
+        </div>
+      </nuxt-link>
+    </div>
 
-      <div class="pdtitle text-center">Ürün Detayları</div>
+    <div class="pdtitle text-center">Ürün Detayları</div>
 
-      <div class="productdetailtab">
-        <ul class="nav nav-pills mb-3 npd" id="pills-tab" role="tablist">
-          <li class="nav-item mx-auto" role="presentation">
-            <a
-              class="nav-link active"
-              id="pills-pcomments-tab"
-              data-toggle="pill"
-              href="#pcomments"
-              role="tab"
-              aria-controls="pills-pcomments"
-              aria-selected="true"
-            >
-              <i class="far fa-comment"></i> Ürün Yorumları
-            </a>
-          </li>
-          <li class="nav-item mx-auto" role="presentation">
-            <a
-              class="nav-link"
-              id="pills-profile-tab"
-              data-toggle="pill"
-              href="#profile"
-              role="tab"
-              aria-controls="pills-profile"
-              aria-selected="false"
-            >
-              <i class="fas fa-info-circle"></i> Ürün Özellikleri
-            </a>
-          </li>
-          <li class="nav-item mx-auto" role="presentation">
-            <a
-              class="nav-link"
-              id="pills-contact-tab"
-              data-toggle="pill"
-              href="#pills-contact"
-              role="tab"
-              aria-controls="pills-contact"
-              aria-selected="false"
-            >
-              <i class="fas fa-exchange-alt"></i> İade ve Değişim
-            </a>
-          </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-          <div
-            class="tab-pane fade show active"
-            id="pcomments"
-            role="tabpanel"
-            aria-labelledby="pcomments-tab"
+    <div class="productdetailtab">
+      <ul class="nav nav-pills mb-3 npd" id="pills-tab" role="tablist">
+        <li class="nav-item mx-auto" role="presentation">
+          <a
+            class="nav-link active"
+            id="pills-pcomments-tab"
+            data-toggle="pill"
+            href="#pcomments"
+            role="tab"
+            aria-controls="pills-pcomments"
+            aria-selected="true"
           >
-            <div class="pcommentfirstdiv row">
-              <div class="col mx-auto">
-                <img
-                  class="productimagecomment"
-                  src="https://www.bestjquery.com/tutorial/product-grid/demo5/images/img-1.jpg"
-                />
+            <i class="far fa-comment"></i> Ürün Yorumları
+          </a>
+        </li>
+        <li class="nav-item mx-auto" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-profile-tab"
+            data-toggle="pill"
+            href="#profile"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+          >
+            <i class="fas fa-info-circle"></i> Ürün Özellikleri
+          </a>
+        </li>
+        <li class="nav-item mx-auto" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-contact-tab"
+            data-toggle="pill"
+            href="#pills-contact"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+          >
+            <i class="fas fa-exchange-alt"></i> İade ve Değişim
+          </a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pcomments"
+          role="tabpanel"
+          aria-labelledby="pcomments-tab"
+        >
+          <div class="pcommentfirstdiv row">
+            <div class="col mx-auto">
+              <img
+                class="productimagecomment"
+                src="https://www.bestjquery.com/tutorial/product-grid/demo5/images/img-1.jpg"
+              />
+            </div>
+            <div class="m-auto col-lg-8 col-md-auto p-rating">
+              <b-form-rating
+                class="rating2 mx-auto"
+                icon-empty="heart"
+                icon-half="heart-half"
+                icon-full="heart-fill"
+                id="rating-readonly"
+                value="3.6"
+                readonly
+                show-value
+                precision="1"
+                variant="danger"
+              ></b-form-rating>
+              <div class="pvotes m-auto">
+                <div class="pvote1">
+                  5
+                  <b-icon icon="heart-fill" class="m-2" variant="danger"></b-icon>
+                  <div class="pvote mx-auto">(2 Oy Verildi)</div>
+                </div>
+                <div class="pvote1">
+                  4
+                  <b-icon icon="heart-fill" class="m-2" variant="danger"></b-icon>
+                  <div class="pvote">(1 Oy Verildi)</div>
+                </div>
+                <div class="pvote1">
+                  3
+                  <b-icon icon="heart-fill" class="m-2" variant="danger"></b-icon>
+                  <div class="pvote">(0 Oy Verildi)</div>
+                </div>
+                <div class="pvote1">
+                  2
+                  <b-icon icon="heart-fill" class="m-2" variant="danger"></b-icon>
+                  <div class="pvote">(2 Oy Verildi)</div>
+                </div>
+                <div class="pvote1">
+                  1
+                  <b-icon icon="heart-fill" class="m-2" variant="danger"></b-icon>
+                  <div class="pvote">(0 Oy Verildi)</div>
+                </div>
               </div>
-              <div class="m-auto col-lg-8 col-md-auto p-rating">
+            </div>
+          </div>
+
+          <div class="pcommentseconddiv">
+            <div class="comments mx-auto row">
+              <div class="col m-auto comav">
+                <div class="commentavatar m-auto">EÖ</div>
+                <span class="commentname mx-auto">Emre Özer</span>
+              </div>
+              <div class="comment mx-auto col-lg-8 col-md-auto">
                 <b-form-rating
-                  class="rating2 mx-auto"
+                  class="com-0"
+                  inline
+                  value="5"
                   icon-empty="heart"
                   icon-half="heart-half"
                   icon-full="heart-fill"
-                  id="rating-readonly"
-                  value="3.6"
                   readonly
-                  show-value
-                  precision="1"
                   variant="danger"
                 ></b-form-rating>
-                <div class="pvotes m-auto">
-                  <div class="pvote1">
-                    5
-                    <b-icon icon="heart-fill" class="m-2" variant="danger"></b-icon>
-                    <div class="pvote mx-auto">(2 Oy Verildi)</div>
-                  </div>
-                  <div class="pvote1">
-                    4
-                    <b-icon icon="heart-fill" class="m-2" variant="danger"></b-icon>
-                    <div class="pvote">(1 Oy Verildi)</div>
-                  </div>
-                  <div class="pvote1">
-                    3
-                    <b-icon icon="heart-fill" class="m-2" variant="danger"></b-icon>
-                    <div class="pvote">(0 Oy Verildi)</div>
-                  </div>
-                  <div class="pvote1">
-                    2
-                    <b-icon icon="heart-fill" class="m-2" variant="danger"></b-icon>
-                    <div class="pvote">(2 Oy Verildi)</div>
-                  </div>
-                  <div class="pvote1">
-                    1
-                    <b-icon icon="heart-fill" class="m-2" variant="danger"></b-icon>
-                    <div class="pvote">(0 Oy Verildi)</div>
-                  </div>
-                </div>
+                <br />
+                <span class="com-title mx-auto">Yorum Başlığı</span>
+                <span
+                  class="com-1 mx-auto"
+                >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab iusto similique corrupti exercitationem voluptate unde. Veritatis ipsum, officia, eveniet, eius repellat non maiores facere dicta sunt soluta dignissimos consectetur suscipit!</span>
               </div>
             </div>
 
-            <div class="pcommentseconddiv">
-              <div class="comments mx-auto row">
-                <div class="col m-auto comav">
-                  <div class="commentavatar m-auto">EÖ</div>
-                  <span class="commentname mx-auto">Emre Özer</span>
-                </div>
-                <div class="comment mx-auto col-lg-8 col-md-auto">
-                  <b-form-rating
-                    class="com-0"
-                    inline
-                    value="5"
-                    icon-empty="heart"
-                    icon-half="heart-half"
-                    icon-full="heart-fill"
-                    readonly
-                    variant="danger"
-                  ></b-form-rating>
-                  <br />
-                  <span class="com-title mx-auto">Yorum Başlığı</span>
-                  <span
-                    class="com-1 mx-auto"
-                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab iusto similique corrupti exercitationem voluptate unde. Veritatis ipsum, officia, eveniet, eius repellat non maiores facere dicta sunt soluta dignissimos consectetur suscipit!</span>
-                </div>
+            <div class="comments mx-auto row">
+              <div class="col m-auto comav">
+                <div class="commentavatar m-auto">EÖ</div>
+                <span class="commentname mx-auto">Emre Özer</span>
               </div>
-
-              <div class="comments mx-auto row">
-                <div class="col m-auto comav">
-                  <div class="commentavatar m-auto">EÖ</div>
-                  <span class="commentname mx-auto">Emre Özer</span>
-                </div>
-                <div class="comment mx-auto col-lg-8 col-md-auto">
-                  <b-form-rating
-                    class="com-0"
-                    inline
-                    value="5"
-                    icon-empty="heart"
-                    icon-half="heart-half"
-                    icon-full="heart-fill"
-                    readonly
-                    variant="danger"
-                  ></b-form-rating>
-                  <br />
-                  <span class="com-title mx-auto">Yorum Başlığı</span>
-                  <span
-                    class="com-1 mx-auto"
-                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab iusto similique corrupti exercitationem voluptate unde. Veritatis ipsum, officia, eveniet, eius repellat non maiores facere dicta sunt soluta dignissimos consectetur suscipit!</span>
-                </div>
-              </div>
-
-              <div class="comments mx-auto row">
-                <div class="col m-auto comav">
-                  <div class="commentavatar m-auto">Rİ</div>
-                  <span class="commentname mx-auto">Raşit İri</span>
-                </div>
-                <div class="comment mx-auto col-lg-8 col-md-auto">
-                  <b-form-rating
-                    class="com-0"
-                    inline
-                    value="4"
-                    icon-empty="heart"
-                    icon-half="heart-half"
-                    icon-full="heart-fill"
-                    readonly
-                    variant="danger"
-                  ></b-form-rating>
-                  <br />
-                  <span class="com-title mx-auto">Yorum Başlığı</span>
-                  <span
-                    class="com-1 mx-auto"
-                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab iusto similique corrupti exercitationem voluptate unde. Veritatis ipsum, officia, eveniet, eius repellat non maiores facere dicta sunt soluta dignissimos consectetur suscipit!</span>
-                </div>
+              <div class="comment mx-auto col-lg-8 col-md-auto">
+                <b-form-rating
+                  class="com-0"
+                  inline
+                  value="5"
+                  icon-empty="heart"
+                  icon-half="heart-half"
+                  icon-full="heart-fill"
+                  readonly
+                  variant="danger"
+                ></b-form-rating>
+                <br />
+                <span class="com-title mx-auto">Yorum Başlığı</span>
+                <span
+                  class="com-1 mx-auto"
+                >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab iusto similique corrupti exercitationem voluptate unde. Veritatis ipsum, officia, eveniet, eius repellat non maiores facere dicta sunt soluta dignissimos consectetur suscipit!</span>
               </div>
             </div>
 
-
-             <div class="nav nav-pills mt-3 npd" id="pills-tab" role="tablist">
-                   <a
-              class="nav-link mx-auto"
-              
-              href="#"
-             
-              
-            >
-              <i class="far fa-comments"></i> Tüm Yorumları Gör
-            </a>
-             </div>
+            <div class="comments mx-auto row">
+              <div class="col m-auto comav">
+                <div class="commentavatar m-auto">Rİ</div>
+                <span class="commentname mx-auto">Raşit İri</span>
+              </div>
+              <div class="comment mx-auto col-lg-8 col-md-auto">
+                <b-form-rating
+                  class="com-0"
+                  inline
+                  value="4"
+                  icon-empty="heart"
+                  icon-half="heart-half"
+                  icon-full="heart-fill"
+                  readonly
+                  variant="danger"
+                ></b-form-rating>
+                <br />
+                <span class="com-title mx-auto">Yorum Başlığı</span>
+                <span
+                  class="com-1 mx-auto"
+                >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab iusto similique corrupti exercitationem voluptate unde. Veritatis ipsum, officia, eveniet, eius repellat non maiores facere dicta sunt soluta dignissimos consectetur suscipit!</span>
+              </div>
+            </div>
           </div>
 
-
-
-
-          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+          <div class="nav nav-pills mt-3 npd" id="pills-tab" role="tablist">
+            <a class="nav-link mx-auto" href="#">
+              <i class="far fa-comments"></i> Tüm Yorumları Gör
+            </a>
+          </div>
         </div>
+
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
       </div>
-  
+    </div>
   </div>
 </template>
 
@@ -452,8 +442,8 @@ export default {
   overflow: hidden;
   width: 200px;
   height: 240px;
-text-align: center;
-display:none;
+  text-align: center;
+  display: none;
   justify-content: center;
 }
 
@@ -499,12 +489,11 @@ display:none;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 1px;
- 
 }
 
 .rptitle {
   font-weight: bold;
-  color:rgb(44, 44, 44)
+  color: rgb(44, 44, 44);
 }
 
 .productdet {
@@ -514,8 +503,6 @@ display:none;
   padding: 15px;
   color: gray;
 }
-
-
 
 .productcomme {
   display: block;
@@ -562,15 +549,12 @@ display:none;
 }
 
 .idblock {
-  display:block;
- text-align: center;
+  display: block;
+  text-align: center;
 }
 
 .quantity {
-
   color: gray;
-
- 
 }
 .recdeck {
   border-radius: 10px;
@@ -590,10 +574,10 @@ display:none;
 }
 
 .recproduct:hover {
--webkit-box-shadow: 0px 0px 38px -4px rgba(0,0,0,0.24);
--moz-box-shadow: 0px 0px 38px -4px rgba(0,0,0,0.24);
-box-shadow: 0px 0px 38px -4px rgba(0,0,0,0.24);
- transition: 0.7s;
+  -webkit-box-shadow: 0px 0px 38px -4px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 0px 38px -4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 0px 38px -4px rgba(0, 0, 0, 0.24);
+  transition: 0.7s;
 }
 
 .rpimage-box {
@@ -695,7 +679,7 @@ box-shadow: 0px 0px 38px -4px rgba(0,0,0,0.24);
 .pvote {
   color: gray;
   font-size: 10px;
-  display:inline-flex !important;
+  display: inline-flex !important;
 }
 
 .rating2 {
@@ -752,21 +736,21 @@ box-shadow: 0px 0px 38px -4px rgba(0,0,0,0.24);
 }
 
 .commentavatar {
-display: flex;
+  display: flex;
   border-radius: 50%;
   background-color: #575757;
   text-align: center;
   color: white;
   font-size: 20px;
-width: 60px;
-height: 60px;
-justify-content: center;
-align-items: center;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
 }
 
 .commentname {
   font-size: 14px;
-  
+
   margin: 10px !important;
   color: gray;
 }
@@ -778,7 +762,6 @@ align-items: center;
   .productimage2 {
     display: flex;
   }
-
 
   .pcommentfirstdiv {
     display: block !important;

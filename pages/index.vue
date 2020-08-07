@@ -13,53 +13,22 @@
         @sliding-end="onSlideEnd"
         class="b-carousel mx-auto items-center"
       >
-        <!-- Text slides with image -->
-        <b-carousel-slide img-src="https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></b-carousel-slide>
-
-        <!-- Slides with custom text -->
-        <b-carousel-slide img-src="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"></b-carousel-slide>
-
-        <!-- Slides with image only -->
-        <b-carousel-slide img-src="https://images.pexels.com/photos/235469/pexels-photo-235469.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></b-carousel-slide>
-
-        <!-- Slides with img slot -->
-        <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
-        <b-carousel-slide>
-          <template v-slot:img>
-            <img
-              class="d-block img-fluid w-100"
-              src="https://images.pexels.com/photos/3722151/pexels-photo-3722151.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              alt="image slot"
-            />
-          </template>
-        </b-carousel-slide>
-
-        <!-- Slide with blank fluid image to maintain slide aspect ratio -->
+        <b-carousel-slide
+          img-src="https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        ></b-carousel-slide>
+        <b-carousel-slide
+          img-src="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+        ></b-carousel-slide>
+        <b-carousel-slide
+          img-src="https://images.pexels.com/photos/235469/pexels-photo-235469.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        ></b-carousel-slide>
       </b-carousel>
     </div>
-
-    <!-- <div class="cmp">
-      <span class="campaignestitle mt-4 mx-auto">Kampanyalar</span>
-      <div class="marqq mx-auto mb-4">
-        <nuxt-link to="#" class="img1 campaignes"></nuxt-link>
-        <nuxt-link to="#" class="img1 campaignes"></nuxt-link>
-        <nuxt-link to="#" class="img1 campaignes"></nuxt-link>
-        <nuxt-link to="#" class="img1 campaignes"></nuxt-link>
-        <nuxt-link to="#" class="img1 campaignes"></nuxt-link>
-        <nuxt-link to="#" class="img1 campaignes"></nuxt-link>
-        <nuxt-link to="#" class="img1 campaignes"></nuxt-link>
-        <nuxt-link to="#" class="img1 campaignes"></nuxt-link>
-        <nuxt-link to="#" class="img1 campaignes"></nuxt-link>
-      </div>
-    </div> -->
-
-<div class="bok">sdfsadf</div>
+    <div class="bok">sdfsadf</div>
   </div>
 </template>
 
 <script>
-
-
 export default {
   data() {
     return {
@@ -74,18 +43,15 @@ export default {
     onSlideEnd(slide) {
       this.sliding = false
     },
-
-    
-   
   },
-
-  
 }
 </script>
 
 <style >
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
-.bok {margin-top: 2000px;}
+.bok {
+  margin-top: 2000px;
+}
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   border-radius: 50%;
@@ -103,18 +69,16 @@ export default {
 
   justify-content: center;
 
-
-margin: auto;
+  margin: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
- 
 }
 
 .img-fluid {
   justify-content: center;
-  margin: auto; 
-    height: 400px !important;
+  margin: auto;
+  height: 400px !important;
 }
 
 .campaignestitle {
@@ -140,7 +104,6 @@ margin: auto;
   z-index: 0;
 }
 
-
 .marqq {
   z-index: 10;
   display: flex;
@@ -153,10 +116,6 @@ margin: auto;
   height: 400px;
   justify-content: center;
   align-items: center;
-  padding-left:500px;
-
-
+  padding-left: 500px;
 }
-
-
 </style>

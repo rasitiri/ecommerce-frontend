@@ -2,287 +2,21 @@
   <div>
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-
-    <div id="navbar1" class="ns flex">
-      <span class="my-auto nsler m-3 ns1">200 TL VE ÜZERİ ÇANTA HEDİYE</span>
-      <span class="mx-auto my-auto nsler ns2">90 GÜN DEĞİŞİM VE İADE</span>
-      <span class="my-auto nsler m-3 ns3">TÜM ALIŞVERİŞLERDE KARGO ÜCRETSİZ</span>
-    </div>
-
-    <div class="aranav m-auto">
-      <nuxt-link to="./productdetails/3" class="mincat mt-1">Yardım</nuxt-link>
-      <span class="my-auto text-muted">|</span>
-      <nuxt-link to="#" class="mincat mt-1">Siparişlerim</nuxt-link>
-      <span class="my-auto text-muted">|</span>
-      <nuxt-link to="#" class="mincat mt-1">Kampanyalar</nuxt-link>
-      <span class="my-auto text-muted">|</span>
-      <nuxt-link to="#" class="mincat mt-1">Kupon</nuxt-link>
-      <span class="my-auto text-muted">|</span>
-      <nuxt-link to="#" class="mincat mt-1">Language</nuxt-link>
-    </div>
-
-    <div id="navbar2" class="navbar2 sticky-top">
-      <nuxt-link class="logo" to="/">
-        STORE
-        <div>
-          <i class="fas fa-store"></i>
-        </div>
-      </nuxt-link>
-
-      <form class="form-inline m-auto">
-        <input class="searchbar" type="search" placeholder="Ne arıyordunuz?" aria-label="Search" />
-        <button class="searchbutton" type="submit">
-          Ara
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </button>
-      </form>
-
-      <nuxt-link to="/cart" class="m-auto category2 text-center border border-light rounded p-1 category">
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        <span class="badge badge-danger ml-1">0</span>
-        <div>Sepetim</div>
-      </nuxt-link>
-
-      <div class="my-auto categories2">
-        <!-- Button trigger modal -->
-        <div class="category catsignn border-0" data-toggle="modal" data-target="#login">Giriş Yap</div>
-
-        <div class="category catsignn  border-0" data-toggle="modal" data-target="#signup">Kayıt Ol</div>
-      </div>
-      <!-- Modal -->
-      <div
-        class="modal"
-        id="login"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Giriş Yap</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="email">E-mail Adresi</label>
-                  <input placeholder="email@örnek.com" class="form-control" id="email" />
-                </div>
-                <div class="form-group">
-                  <label for="password">Şifre</label>
-                  <input type="password" class="form-control" id="password" />
-                </div>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                  <label class="form-check-label" for="exampleCheck1">Beni Hatırla</label>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="submit" class="giris">Giriş Yap</button>
-              <button type="submit" class="giris2">
-                <i class="fab fa-facebook"></i> Facebook ile Giriş Yap
-              </button>
-              <button type="submit" class="giris3">
-                <i class="fab fa-google-plus"></i> Google ile Giriş Yap
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="modal"
-        id="signup"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel2"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Kayıt Ol</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group namesurname">
-                  <div class="mr-1">
-                    <label for="name">Adınız</label>
-                    <input class="form-control" id="name" />
-                  </div>
-                  <div>
-                    <label for="surname">Soyadınız</label>
-                    <input class="form-control" id="surname" />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="email">E-mail Adresi</label>
-                  <input placeholder="email@örnek.com" class="form-control" id="email" />
-                </div>
-                <div class="form-group">
-                  <label for="password">Şifre</label>
-                  <input type="password" class="form-control" id="password" />
-                </div>
-                <div class="form-group">
-                  <label for="password">Tekrar Şifre</label>
-                  <input type="password" class="form-control" id="password" />
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="submit" class="giris">Kayıt Ol</button>
-              <button type="submit" class="giris2">
-                <i class="fab fa-facebook"></i> Facebook ile Kayıt Ol
-              </button>
-              <button type="submit" class="giris3">
-                <i class="fab fa-google-plus"></i> Google ile Kayıt Ol
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="categories1 m-auto">
-      <div class="subnav">
-        <nuxt-link to="news" class="category subnavbtn">Yeniler</nuxt-link>
-        <div class="subnav-content">
-          <span>Company</span>
-          <span>fm</span>
-          <span>Careers</span>
-        </div>
-      </div>
-      <div class="subnav">
-        <div class="category subnavbtn">Kadın</div>
-        <div class="subnav-content">
-          <span href="#team">Elbise</span>
-          <span href="#company">T-shirt</span>
-
-          <span>Careers</span>
-        </div>
-      </div>
-      <div class="subnav">
-        <div class="category subnavbtn">Erkek</div>
-        <div class="subnav-content">
-          <div class="subimage m-auto flex text-center" alt="model-photo" src>
-            <span class="m-auto imagetext">Tümünü Gör</span>
-          </div>
-          <div class="block m-auto block1">
-            <ul class="text-center">
-              <span class="lititle">Öne Çıkanlar</span>
-              <li class="litop">Company</li>
-              <li>Company</li>
-              <li>Company</li>
-              <li>Company</li>
-              <li>Company</li>
-              <li>Company</li>
-              <li>Company</li>
-            </ul>
-          </div>
-
-          <div class="block m-auto block2">
-            <ul class="text-center">
-              <span class="lititle">Öne Çıkanlar</span>
-              <li class="litop">Company</li>
-              <li>Company</li>
-              <li>Company</li>
-              <li>Company</li>
-            </ul>
-            <ul class="text-center">
-              <span class="lititle">Öne Çıkanlar</span>
-              <li class="litop">Company</li>
-              <li>Company</li>
-              <li>Company</li>
-              <li>Company</li>
-            </ul>
-          </div>
-
-          <div class="block m-auto block3">
-            <ul class="text-center">
-              <span class="lititle">Öne Çıkanlar</span>
-              <li class="litop">Company</li>
-              <li>Company</li>
-              <li>Company</li>
-              <li>Company</li>
-            </ul>
-            <ul class="text-center">
-              <span class="lititle">Öne Çıkanlar</span>
-              <li class="litop">Company</li>
-              <li>Company</li>
-              <li>Company</li>
-              <li>Company</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="subnav">
-        <div class="category subnavbtn">Çocuk</div>
-        <div class="subnav-content">
-          <span>Comprany</span>
-          <span>sdam</span>
-          <span>Careers</span>
-        </div>
-      </div>
-
-      <div class="subnav">
-        <div class="category subnavbtn">Aksesuar</div>
-        <div class="subnav-content">
-          <span>Company</span>
-          <span>dfam</span>
-          <span>Casadfsreers</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="navbar3 sticky-top">
-      <form class="form-inline mx-auto my-2">
-        <input class="searchbar2" type="search" placeholder="Ne arıyordunuz?" aria-label="Search" />
-        <button class="searchbutton2" type="submit">
-          Ara
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </button>
-      </form>
-    </div>
+    <header-component></header-component>
+    <navbar-top></navbar-top>
+    <navbar-main></navbar-main>
+    <navbar-modal></navbar-modal>
+    <search></search>
 
     <nuxt></nuxt>
+
     <div>
       <a v-scroll="handleScroll" class="tothetop" href="#navbar1">
-     
-        <i class="fas fa-chevron-up "></i>
+        <i class="fas fa-chevron-up"></i>
       </a>
     </div>
     <footerpart></footerpart>
@@ -291,35 +25,37 @@
 
 <script>
 import footerpart from '../components/footerpart'
+import HeaderComponent from '../components/Navbar/HeaderComponent'
+import NavbarTop from '../components/Navbar/NavbarTop'
+import NavbarMain from '../components/Navbar/NavbarMain'
+import Search from '../components/Navbar/Search'
+import NavbarModal from '../components/Navbar/NavbarModal'
 
 export default {
   components: {
     footerpart,
+    HeaderComponent,
+    NavbarTop,
+    NavbarMain,
+    Search,
+    NavbarModal,
   },
 
   methods: {
     handleScroll: function (evt, el) {
       if (window.scrollY > 700) {
-        el.setAttribute(
-          'style',
-          'display:block; '
-        )
+        el.setAttribute('style', 'display:block; ')
       }
 
-       if (window.scrollY < 200) {
-        el.setAttribute(
-          'style',
-          'display:none;'
-        )
+      if (window.scrollY < 200) {
+        el.setAttribute('style', 'display:none;')
       }
-
-    
     },
   },
 }
 </script>
 
-<style > 
+<style >
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
@@ -327,8 +63,12 @@ export default {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-button {box-shadow:none !important;}
-select {box-shadow:none !important;}
+button {
+  box-shadow: none !important;
+}
+select {
+  box-shadow: none !important;
+}
 
 .giris {
   justify-content: center;
@@ -387,19 +127,18 @@ select {box-shadow:none !important;}
   padding: 6px;
   outline: none;
   width: 500px;
-  margin-left:30px ;
+  margin-left: 30px;
 }
 
 .searchbar:focus {
   border: 2px solid rgb(255, 87, 87);
-
 }
 
 .searchbutton {
   border-radius: 0px 10px 10px 0px;
   -moz-border-radius: 0px 10px 10px 0px;
   -webkit-border-radius: 0px 10px 10px 0px;
- border: 2px solid #bebebe;
+  border: 2px solid #bebebe;
   border-left: 0px !important;
   color: gray;
   background-color: white;
@@ -429,7 +168,7 @@ select {box-shadow:none !important;}
   border-radius: 10px 0px 0px 10px;
   -moz-border-radius: 10px 0px 0px 10px;
   -webkit-border-radius: 10px 0px 0px 10px;
-   border: 2px solid #bebebe;
+  border: 2px solid #bebebe;
   border-right: 0px;
   padding: 6px;
   outline: none;
@@ -444,7 +183,7 @@ select {box-shadow:none !important;}
   border-radius: 0px 10px 10px 0px;
   -moz-border-radius: 0px 10px 10px 0px;
   -webkit-border-radius: 0px 10px 10px 0px;
- border: 2px solid #bebebe;
+  border: 2px solid #bebebe;
   border-left: 0px !important;
   color: gray;
   background-color: white;
@@ -480,7 +219,6 @@ select {box-shadow:none !important;}
 .catsignn {
   padding: 10px;
 }
-
 
 .category:hover {
   border-bottom: 1px solid rgb(255, 68, 68);
@@ -535,12 +273,12 @@ a {
   right: 25px;
   border-radius: 25px;
   background-color: rgb(105, 105, 105);
-  padding: 10px 15px ;
+  padding: 10px 15px;
   color: rgb(235, 235, 235) !important;
   box-shadow: 1px 1px 1px rgb(165, 165, 165), 2px 2px 2px rgb(170, 170, 170);
   transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
-  display:none;
-  transform: translate3d(0, -10px, 0)
+  display: none;
+  transform: translate3d(0, -10px, 0);
 }
 
 .ns {
@@ -660,7 +398,6 @@ a {
     right: 15px;
     padding: 6px 10px;
     font-size: 14px;
-    
   }
 
   .navbar2 {
@@ -830,7 +567,4 @@ a {
   border-bottom: 1px solid rgb(255, 68, 68) !important;
   color: rgb(255, 68, 68) !important;
 }
-
-
-
 </style>

@@ -24,7 +24,30 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      {
+        src: 'https://code.jquery.com/jquery-3.5.1.slim.min.js',
+      },
+      {
+        src:
+          'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js',
+      },
+      {
+        src:
+          'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js',
+      },
+    ],
+    link: [
+      {
+        rel: 'stylesheet',
+        href: 'https://use.fontawesome.com/releases/v5.14.0/css/all.css',
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css',
+      },
+    ],
   },
   /*
    ** Global CSS
@@ -34,10 +57,11 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['~/plugins/directives.js',
-  '~/plugins/zoomOnHover.js',
-  '~/plugins/vue-number-input.js',
-],
+  plugins: [
+    '~/plugins/directives.js',
+    '~/plugins/zoomOnHover.js',
+    '~/plugins/vue-number-input.js',
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
